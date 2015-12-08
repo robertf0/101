@@ -105,4 +105,4 @@ loop do
   break unless response.downcase().start_with?('y')
 end
 
-say('Thank you for using caclulator')
+say('Thank you for using calculator')
