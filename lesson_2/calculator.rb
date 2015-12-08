@@ -10,18 +10,18 @@ num2 = Kernel.gets().chomp()
 
 Kernel.puts('Would you like to (a)dd, (m)uiltiply, (s)ubtract or (d)ivide?')
 
-opperator = Kernel.gets().chomp()
+operator = Kernel.gets().chomp()
 
-if opperator.downcase() == 'a'
+if operator.downcase() == 'a'
   answer = num1.to_i() + num2.to_i()
-elsif opperator.downcase() == 'm'
+elsif operator.downcase() == 'm'
   answer = num1.to_i() * num2.to_i()
-elsif opperator.downcase() == 's'
+elsif operator.downcase() == 's'
   answer = num1.to_i() - num2.to_i()
-elsif opperator.downcase() == 'd'
+elsif operator.downcase() == 'd'
   answer = num1.to_f() / num2.to_f()
 else
-  Kernel.puts('You did not enter a valid opperator')
+  Kernel.puts('You did not enter a valid operator')
 end
 
 Kernel.puts("The answer is #{answer}")
