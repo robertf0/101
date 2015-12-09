@@ -27,7 +27,7 @@ loop do
   name = Kernel.gets().chomp()
 
   if name.empty?()
-  say("Please enter you name.")
+    say('Please enter you name.')
   else
     break
   end
@@ -36,7 +36,6 @@ end
 say("Hi #{name}")
 
 loop do
-
   num1 = ''
   num2 = ''
 
@@ -63,9 +62,9 @@ loop do
   end
 
   operator_choices = <<-HERE
-    Would you like to 
+    Would you like to
     (a)dd
-    (m)uiltiply 
+    (m)uiltiply
     (s)ubtract
     (d)ivide?
   HERE
@@ -80,7 +79,7 @@ loop do
     if %w(a m s d).include?(operator.downcase())
       break
     else
-      say("Must choose a, m, s or d")
+      say('Must choose a, m, s or d')
     end
   end
 
@@ -88,15 +87,15 @@ loop do
 
   answer = case operator.downcase()
            when 'a'
-            num1.to_i() + num2.to_i()
+             num1.to_i() + num2.to_i()
            when 'm'
-            num1.to_i() * num2.to_i()
+             num1.to_i() * num2.to_i()
            when 's'
-            num1.to_i() - num2.to_i()
+             num1.to_i() - num2.to_i()
            when 'd'
-            num1.to_f() / num2.to_f()
+             num1.to_f() / num2.to_f()
            else
-            say('You did not enter a valid operator')
+             say('You did not enter a valid operator')
            end
 
   say("The answer is #{answer}")
